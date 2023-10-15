@@ -415,7 +415,7 @@
 </div>
     <img class="h-20" src="/src/assets/maventama.png" alt="Company name">
     <div class="mt-6 border-t border-gray-900/10 pt-8">
-      <p class="text-xs leading-5 text-gray-500">&copy; 2023 MavenTama. All rights reserved.</p>
+      <p class="text-xs leading-5 text-gray-500">&copy; 2023 MavenTama. All rights reserved. Base on Indonesia 🇮🇩</p>
     </div>
   </div>
 </footer>

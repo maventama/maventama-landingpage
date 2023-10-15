@@ -46,9 +46,13 @@
                                 aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                     </div>
                 </div> -->
+                <div class="mb-8 flex justify-center">
+                    <img class="h-20" src="/src/assets/maventama.png" alt="">
+                </div>
                 <div class="text-center">
-                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Beyond Software, Into
-                        Tomorrow.</h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        Beyond Software, Into Tomorrow.
+                    </h1>
                     <p class="mt-6 text-lg leading-8 text-gray-600">Dengan kami, Anda dapat melebihi batas-batas
                         teknologi, memasuki dunia baru yang penuh peluang.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">

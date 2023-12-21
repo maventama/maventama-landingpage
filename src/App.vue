@@ -1,51 +1,100 @@
 <template>
-    <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
-            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div class="flex lg:flex-1">
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">MavenTama</span>
+                    <img class="h-8 w-auto" src="/src/assets/maventama.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <!-- on click button below, show sidebar -->
+                <button class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                    @click="hideElement = !hideElement">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#home" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+                <a href="#clients" class="text-sm font-semibold leading-6 text-gray-900">Clients</a>
+                <a href="#works" class="text-sm font-semibold leading-6 text-gray-900">Our Work</a>
+                <a href="#software_products" class="text-sm font-semibold leading-6 text-gray-900">Software Products</a>
+                <a href="#custom_software" class="text-sm font-semibold leading-6 text-gray-900">Custom Software</a>
+                <a href="#digital_agency_services" class="text-sm font-semibold leading-6 text-gray-900">Digital Agency
+                    Service</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+                        aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div :class="{ 
+            'lg:hidden': true,
+            'hidden': hideElement
+         }" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">MavenTama</span>
                         <img class="h-8 w-auto" src="/src/assets/maventama.png" alt="">
                     </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                        @click="hideElement = !hideElement">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
-            </nav>
-        </header>
-        <div class="flex items-center gap-x-6 bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 pl-20">
-            <p class="text-sm leading-6 text-white">
-                <a target="_blank" href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house.">
-                    <strong class="font-semibold">Mau buat sistem & tanya harga atau mau konsultasi lebih
-                        lanjut?</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current"
-                        aria-hidden="true">
-                        <circle cx="1" cy="1" r="1" /></svg>WhatsApp disini untuk tanya-tanya (GRATIS) &nbsp;<span
-                        aria-hidden="true">&rarr;</span>
-                </a>
-            </p>
-            <div class="flex flex-1 justify-end">
-                <!-- <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                    </svg>
-                </button> -->
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#home"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                            <a href="#clients"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Clients</a>
+                            <a href="#works"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Our
+                                Work</a>
+                            <a href="#software_products"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Software
+                                Products</a>
+                            <a href="#custom_software"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Custom
+                                Software</a>
+                            <a href="#digital_agency_services"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Digital
+                                Agency Service</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
 
+    <div class="bg-white" id="home">
         <div class="relative isolate px-6 pt-14 lg:px-8">
-            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-                aria-hidden="true">
+            <div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
             <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div
-                        class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                        About us? <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0"
-                                aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-                    </div>
-                </div> -->
                 <div class="mb-8 flex justify-center">
                     <img class="h-20" src="/src/assets/maventama.png" alt="">
                 </div>
@@ -56,11 +105,12 @@
                     <p class="mt-6 text-lg leading-8 text-gray-600">Dengan kami, Anda dapat melebihi batas-batas
                         teknologi, memasuki dunia baru yang penuh peluang.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a target="_blank" href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
+                        <a target="_blank"
+                            href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                             Contact Us ☎
                         </a>
-                        <a href="#portofolios" class="text-sm font-semibold leading-6 text-gray-900">Portofolios <span
+                        <a href="#works" class="text-sm font-semibold leading-6 text-gray-900">Our Work <span
                                 aria-hidden="true">→</span></a>
                     </div>
                 </div>
@@ -83,7 +133,7 @@
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4">
                     <dt class="text-base leading-7 text-gray-600">Projects finish.</dt>
-                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">⚒️ 8+
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">⚒️ 10+
                     </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4">
@@ -96,8 +146,8 @@
     </div>
     <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-3xl font-semibold leading-8 text-gray-900">
-                Trusted by a diverse range of industries.
+            <h2 class="text-center text-3xl font-semibold leading-8 text-gray-900" id="clients">
+                💼 Trusted by a diverse range of industries.
             </h2>
             <div
                 class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -114,10 +164,10 @@
             </div>
         </div>
     </div>
-    <div class="bg-white py-24 sm:py-32" id="portofolios">
+    <div class="bg-white py-12 sm:py-16" id="works">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 class="text-center text-3xl font-semibold leading-8 text-gray-900">
-                🤩 Portofolio.
+                🚀 Our Work.
             </h2>
             <ul role="list" class="divide-y divide-gray-100">
                 <li class="relative flex justify-between gap-x-6 py-5">
@@ -395,33 +445,179 @@
             </ul>
         </div>
     </div>
+    <div class="bg-white py-24 sm:py-32" id="software_products">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    📱 Software Products.
+                </h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">
+                    We have a variety of software products that can help you in your business.
+                </p>
+            </div>
+            <div
+                class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <article
+                    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                    <img src="/src/assets/photopal.png" alt=""
+                        class="absolute inset-0 -z-10 h-full w-full object-cover">
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                    <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <time datetime="2020-03-16" class="mr-8">
+                            PWA Application
+                        </time>
+                        <div class="-ml-4 flex items-center gap-x-4">
+                            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
+                                <circle cx="1" cy="1" r="1" />
+                            </svg>
+                            <div class="flex gap-x-2.5">
+                                photopal.id
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                        <a href="https://photopal.id" target="_blank">
+                            <span class="absolute inset-0"></span>
+                            Photobox anywhere without queuing.
+                        </a>
+                    </h3>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="custom_software">
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-64"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M100 200V.5M.5 .5H200" fill="none" />
+                </pattern>
+            </defs>
+            <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
+                <path
+                    d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
+                    stroke-width="0" />
+            </svg>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+        </svg>
+        <div class="mx-auto max-w-xl lg:max-w-4xl">
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your project</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600"><span class="text-indigo-500 font-semibold">Custom Software or Interesting Project?</span> We can help companies and individuals build out their brand
+                guidelines.</p>
+            <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
+                <form action="#" method="POST" class="lg:flex-auto">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div class="sm:col-span-2">
+                            <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>
+                            <div class="mt-2.5">
+                                <input v-model="name" type="text" name="name" id="name" autocomplete="given-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="company"
+                                class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+                            <div class="mt-2.5">
+                                <input v-model="company" type="text" name="company" id="company"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                            <div class="mt-2.5">
+                                <textarea v-model="message" id="message" name="message" rows="4"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button @click="redirectToWhatsapp"
+                            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let’s
+                            talk</button>
+                    </div>
+                </form>
+                <div class="lg:mt-6 lg:w-80 lg:flex-none">
+                    <img class="h-12 w-auto" src="/src/assets/primtek.png"
+                        alt="">
+                    <figure class="mt-10">
+                        <blockquote class="text-lg font-semibold leading-8 text-gray-900">
+                            <p>“The application process is very fast, they also care about user experience, we have been working with Maventama for 3 years.”</p>
+                        </blockquote>
+                        <figcaption class="mt-10 flex gap-x-6">
+                            <!-- <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
+                                alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50"> -->
+                            <div>
+                                <div class="text-base font-semibold text-gray-900">
+                                    Mr. Surya
+                                </div>
+                                <div class="text-sm leading-6 text-gray-600">COO of PT Prima Teknologi Madani</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="bg-white">
-  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your company productivity.<br>Start using our service today.</h2>
-      <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-        Transform your business efficiency. Elevate your success with our services. Discover a brighter tomorrow with us
-      </p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a target="_blank" href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house." class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            Contact Us ☎
-        </a>
-      </div>
+        <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost MavenTama
+                    productivity.<br>Start using our service today.</h2>
+                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
+                    Transform your business efficiency. Elevate your success with our services. Discover a brighter
+                    tomorrow with us
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a target="_blank"
+                        href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
+                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Contact Us ☎
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<footer class="bg-white" aria-labelledby="footer-heading">
-  <h2 id="footer-heading" class="sr-only">Footer</h2>
-  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <div class="space-y-8">
-    </div>
-</div>
-    <img class="h-20" src="/src/assets/maventama.png" alt="Company name">
-    <div class="mt-6 border-t border-gray-900/10 pt-8">
-      <p class="text-xs leading-5 text-gray-500">&copy; 2023 MavenTama. All rights reserved. Base on Indonesia 🇮🇩</p>
-    </div>
-  </div>
-</footer>
+    <footer class="bg-white" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                </div>
+            </div>
+            <img class="h-20" src="/src/assets/maventama.png" alt="MavenTama">
+            <div class="mt-5 text-xs leading-5 text-gray-500">
+                <a href="mailto:maventama@gmail.com">
+                    maventama@gmail.com
+                </a>
+            </div>
+            <div class="mt-6 border-t border-gray-900/10 pt-8">
+                <p class="text-xs leading-5 text-gray-500">&copy; 2023 MavenTama. All rights reserved. Base on Indonesia
+                    🇮🇩</p>
+            </div>
+        </div>
+    </footer>
 
 </template>
+<script>
+    export default {
+        data() {
+            return {
+                hideElement: true,
+                name: "",
+                company: "",
+                message: "",
+            };
+        },
+        methods: {
+            redirectToWhatsapp() {
+                window.open(`https://wa.me/6285158513669?text=Halo, saya ${this.name} dari ${this.company}, ${this.message}.`, "_blank");
+            }
+        }
+    };
+</script>

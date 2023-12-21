@@ -104,7 +104,8 @@
                     <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                         Beyond Software, Into Tomorrow.
                     </h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">With us, you can transcend technological limits and enter a new world full of opportunities.</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">With us, you can transcend technological limits and
+                        enter a new world full of opportunities.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <a target="_blank"
                             href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
@@ -576,7 +577,8 @@
                 Our Pricing for Digital Agency Service
             </p>
         </div>
-        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">The right price for you, whoever you are.</p>
+        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">The right price for you, whoever
+            you are.</p>
         <div
             class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
             <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-white shadow-2xl">
@@ -645,12 +647,12 @@
                         Google Ads
                     </li>
                 </ul>
-                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket UMKM." aria-describedby="tier-personal"
+                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket UMKM."
+                    aria-describedby="tier-personal"
                     class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10 bg-indigo-600 text-white shadow hover:bg-indigo-500">Get
                     started today</a>
             </div>
-            <div
-                class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0">
+            <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0">
                 <h3 id="tier-team" class="text-base font-semibold leading-7 text-indigo-600">Enterprise</h3>
                 <p class="mt-4 flex items-baseline gap-x-2">
                     <span class="text-5xl font-bold tracking-tight text-gray-900">IDR 7500.000</span>
@@ -723,7 +725,8 @@
                         Google Ads
                     </li>
                 </ul>
-                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket Enterprise." aria-describedby="tier-team"
+                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket Enterprise."
+                    aria-describedby="tier-team"
                     class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Get
                     started today</a>
             </div>
@@ -734,7 +737,7 @@
     <div class="bg-white">
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost MavenTama
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost Your
                     productivity.<br>Start using our service today.</h2>
                 <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
                     Transform your business efficiency. Elevate your success with our services. Discover a brighter

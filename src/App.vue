@@ -29,7 +29,9 @@
                     Service</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+                <a target="_blank"
+                    href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
+                    class="text-sm font-semibold leading-6 text-gray-900">Contact <span
                         aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
@@ -59,20 +61,20 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <a href="#home"
+                            <a @click="hideElement = !hideElement" href="#home"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                            <a href="#clients"
+                            <a @click="hideElement = !hideElement" href="#clients"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Clients</a>
-                            <a href="#works"
+                            <a @click="hideElement = !hideElement" href="#works"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Our
                                 Work</a>
-                            <a href="#software_products"
+                            <a @click="hideElement = !hideElement" href="#software_products"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Software
                                 Products</a>
-                            <a href="#custom_software"
+                            <a @click="hideElement = !hideElement" href="#custom_software"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Custom
                                 Software</a>
-                            <a href="#digital_agency_services"
+                            <a @click="hideElement = !hideElement" href="#digital_agency_services"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Digital
                                 Agency Service</a>
                         </div>
@@ -505,7 +507,8 @@
         </svg>
         <div class="mx-auto max-w-xl lg:max-w-4xl">
             <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your project</h2>
-            <p class="mt-2 text-lg leading-8 text-gray-600"><span class="text-indigo-500 font-semibold">Custom Software or Interesting Project?</span> We can help companies and individuals build out their brand
+            <p class="mt-2 text-lg leading-8 text-gray-600"><span class="text-indigo-500 font-semibold">Custom Software
+                    or Interesting Project?</span> We can help companies and individuals build out their brand
                 guidelines.</p>
             <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
@@ -541,11 +544,11 @@
                     </div>
                 </form>
                 <div class="lg:mt-6 lg:w-80 lg:flex-none">
-                    <img class="h-12 w-auto" src="/src/assets/primtek.png"
-                        alt="">
+                    <img class="h-12 w-auto" src="/src/assets/primtek.png" alt="">
                     <figure class="mt-10">
                         <blockquote class="text-lg font-semibold leading-8 text-gray-900">
-                            <p>“The application process is very fast, they also care about user experience, we have been working with Maventama for 3 years.”</p>
+                            <p>“The application process is very fast, they also care about user experience, we have been
+                                working with Maventama for 3 years.”</p>
                         </blockquote>
                         <figcaption class="mt-10 flex gap-x-6">
                             <!-- <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
@@ -559,6 +562,171 @@
                         </figcaption>
                     </figure>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="digital_agency_services">
+        <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
+            <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
+            <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing Digital Agency Service</h2>
+            <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Our Pricing for Digital Agency Service
+            </p>
+        </div>
+        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">The right price for you, whoever you are.</p>
+        <div
+            class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+            <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-white shadow-2xl">
+                <h3 id="tier-personal" class="text-base font-semibold leading-7 text-indigo-600">
+                    UMKM
+                </h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">IDR 3000.000</span>
+                    <span class="text-base text-gray-500">/month</span>
+                </p>
+                <p class="mt-6 text-base leading-7 text-gray-600">The perfect plan if you&#039;re just getting started
+                    with our product.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        15 Instagram Post/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        5 Videos Instagram Reels or TikTok/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        5 Articles/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Facebook Ads
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        TikTok Ads
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Google Ads
+                    </li>
+                </ul>
+                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket UMKM." aria-describedby="tier-personal"
+                    class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10 bg-indigo-600 text-white shadow hover:bg-indigo-500">Get
+                    started today</a>
+            </div>
+            <div
+                class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0">
+                <h3 id="tier-team" class="text-base font-semibold leading-7 text-indigo-600">Enterprise</h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">IDR 7500.000</span>
+                    <span class="text-base text-gray-500">/month</span>
+                </p>
+                <p class="mt-6 text-base leading-7 text-gray-600">A plan that scales with your rapidly growing business.
+                </p>
+                <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        20 Instagram Post/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        10 Videos Instagram Reels or TikTok/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        10 Articles/Month
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Facebook Ads
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Facebook Ads
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        TikTok Ads
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Google Ads
+                    </li>
+                </ul>
+                <a href="https://wa.me/6285158513669?text=Halo, saya minat dengan digital agency paket Enterprise." aria-describedby="tier-team"
+                    class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Get
+                    started today</a>
             </div>
         </div>
     </div>
@@ -616,7 +784,9 @@
         },
         methods: {
             redirectToWhatsapp() {
-                window.open(`https://wa.me/6285158513669?text=Halo, saya ${this.name} dari ${this.company}, ${this.message}.`, "_blank");
+                window.open(
+                    `https://wa.me/6285158513669?text=Halo, saya ${this.name} dari ${this.company}, ${this.message}.`,
+                    "_blank");
             }
         }
     };

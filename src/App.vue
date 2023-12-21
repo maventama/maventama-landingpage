@@ -104,8 +104,7 @@
                     <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                         Beyond Software, Into Tomorrow.
                     </h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">Dengan kami, Anda dapat melebihi batas-batas
-                        teknologi, memasuki dunia baru yang penuh peluang.</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">With us, you can transcend technological limits and enter a new world full of opportunities.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <a target="_blank"
                             href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."

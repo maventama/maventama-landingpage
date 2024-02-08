@@ -31,15 +31,14 @@
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a target="_blank"
                     href="https://wa.me/6285158513669?text=Halo, saya ingin bertanya mengenai maventama software house."
-                    class="text-sm font-semibold leading-6 text-gray-900">Contact <span
-                        aria-hidden="true">&rarr;</span></a>
+                    class="text-sm font-semibold leading-6 text-gray-900">Contact <span aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div :class="{ 
+        <div :class="{
             'lg:hidden': true,
             'hidden': hideElement
-         }" role="dialog" aria-modal="true">
+        }" role="dialog" aria-modal="true">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="fixed inset-0 z-10"></div>
             <div
@@ -49,8 +48,7 @@
                         <span class="sr-only">MavenTama</span>
                         <img class="h-8 w-auto" src="/src/assets/maventama.png" alt="">
                     </a>
-                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
-                        @click="hideElement = !hideElement">
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="hideElement = !hideElement">
                         <span class="sr-only">Close menu</span>
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             aria-hidden="true">
@@ -563,8 +561,7 @@
                 class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <article
                     class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
-                    <img src="/src/assets/photopal.png" alt=""
-                        class="absolute inset-0 -z-10 h-full w-full object-cover">
+                    <img src="/src/assets/photopal.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
                     <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                     <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
 
@@ -601,8 +598,7 @@
                 </pattern>
             </defs>
             <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
-                <path
-                    d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
+                <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
                     stroke-width="0" />
             </svg>
             <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
@@ -623,16 +619,14 @@
                             </div>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="company"
-                                class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+                            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
                             <div class="mt-2.5">
                                 <input v-model="company" type="text" name="company" id="company"
                                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="message"
-                                class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
                             <div class="mt-2.5">
                                 <textarea v-model="message" id="message" name="message" rows="4"
                                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
@@ -855,6 +849,10 @@
             </div>
         </div>
     </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15863.105676172094!2d106.9196627!3d-6.2930879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d87f38a3951%3A0x8a7fce3d99ed5f28!2sMavenTama!5e0!3m2!1sid!2sid!4v1707396850600!5m2!1sid!2sid"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer class="bg-white" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
@@ -874,24 +872,23 @@
             </div>
         </div>
     </footer>
-
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                hideElement: true,
-                name: "",
-                company: "",
-                message: "",
-            };
-        },
-        methods: {
-            redirectToWhatsapp() {
-                window.open(
-                    `https://wa.me/6285158513669?text=Halo, saya ${this.name} dari ${this.company}, ${this.message}.`,
-                    "_blank");
-            }
+export default {
+    data() {
+        return {
+            hideElement: true,
+            name: "",
+            company: "",
+            message: "",
+        };
+    },
+    methods: {
+        redirectToWhatsapp() {
+            window.open(
+                `https://wa.me/6285158513669?text=Halo, saya ${this.name} dari ${this.company}, ${this.message}.`,
+                "_blank");
         }
-    };
+    }
+};
 </script>
